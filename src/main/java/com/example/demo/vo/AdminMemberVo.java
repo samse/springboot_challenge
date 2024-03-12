@@ -1,4 +1,4 @@
-package com.example.demo.admin;
+package com.example.demo.vo;
 
 public class AdminMemberVo {
 	int a_m_no;				// 관리자 번호

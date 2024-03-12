@@ -32,4 +32,14 @@ spring:
     #  운영반영시에는 true로 해야 한다.
     cache: false
     check-template-location: true
+    
+# MariaDB 설정
+  datasource:
+    driverClassName: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://www.ntoworks.com:3306/db_library
+    username: root
+    password: n2works19!
+mybatis: 
+  type-aliases-package: com.example.demo.vo
+  mapper-locations: mybatis/**/*.xml
   

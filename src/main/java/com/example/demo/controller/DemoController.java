@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.admin.AdminMemberVo;
+import com.example.demo.vo.AdminMemberVo;
 
 @Controller
 public class DemoController {
@@ -49,14 +49,14 @@ public class DemoController {
 		return "지금 시간은 " + date.toLocaleString();
 	}
 	
-	@GetMapping("/admin")
-	public String admin(Model model) {
-		AdminMemberVo adminMemberVo = new AdminMemberVo();
-		adminMemberVo.setA_m_name("Samse Lee");
-		adminMemberVo.setA_m_id("samseya");
-		adminMemberVo.setA_m_reg_date(new Date().toLocaleString());
-		model.addAttribute("adminMemberVo", adminMemberVo);
-		return "thymeleaf/admin";
-	}
+//	@GetMapping("/admin")
+//	public String admin(Model model) {
+//		AdminMemberVo adminMemberVo = new AdminMemberVo();
+//		adminMemberVo.setA_m_name("Samse Lee");
+//		adminMemberVo.setA_m_id("samseya");
+//		adminMemberVo.setA_m_reg_date(new Date().toLocaleString());
+//		model.addAttribute("adminMemberVo", adminMemberVo);
+//		return "thymeleaf/admin";
+//	}
 
 }
